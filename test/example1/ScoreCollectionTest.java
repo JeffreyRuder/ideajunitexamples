@@ -3,6 +3,7 @@ package example1;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
+import static org.hamcrest.CoreMatchers.*;
 
 /**
  * Created by jtr82austin on 7/10/16.
@@ -17,7 +18,7 @@ public class ScoreCollectionTest {
 
         int actualResult = collection.arithmeticMean();
 
-        assertEquals(actualResult, 6);
+        assertThat(actualResult, equalTo(6));
     }
 
 }
